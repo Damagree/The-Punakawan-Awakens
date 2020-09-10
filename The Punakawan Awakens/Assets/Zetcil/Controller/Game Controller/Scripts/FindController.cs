@@ -27,7 +27,7 @@ namespace Zetcil
         [Header("GameObject Tag Settings")]
         public bool usingObjectTag;
         [Tag] public string[] FindingObjectTag;
-        GameObject[] findingObjectTag;
+        public GameObject[] findingObjectTag; // ditambah pulic
 
         [Header("Active Setting")]
         public bool usingSetActive;
