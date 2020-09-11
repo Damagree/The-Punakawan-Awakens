@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5345358942049544000}
   - component: {fileID: 5345358942049544015}
+  - component: {fileID: 5345358943447556938}
   m_Layer: 0
   m_Name: LoadManager
   m_TagString: Untagged
@@ -60,6 +61,18 @@ MonoBehaviour:
   TargetRigidbody3D: {fileID: 0}
   usingVarString: 0
   VarScenename: {fileID: 0}
+--- !u!114 &5345358943447556938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345358942049544014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb94984642e8ae4abe242ef14bd1d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5345358942511686891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,7 +136,7 @@ PrefabInstance:
     - target: {fileID: 114935177448193258, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
       propertyPath: CurrentValue
-      value: Level_Selection_Story
+      value: LV.Selection
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e33649a9f789ac74c9622150d0174c79, type: 3}
