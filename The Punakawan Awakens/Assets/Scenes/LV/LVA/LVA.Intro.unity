@@ -131,7 +131,6 @@ GameObject:
   m_Component:
   - component: {fileID: 660926545}
   - component: {fileID: 660926544}
-  - component: {fileID: 660926543}
   - component: {fileID: 660926546}
   m_Layer: 0
   m_Name: Main Camera
@@ -140,14 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &660926543
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660926542}
-  m_Enabled: 1
 --- !u!20 &660926544
 Camera:
   m_ObjectHideFlags: 0
@@ -213,7 +204,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660926542}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b2f6172cbb8c85641b9f8e54f71d2650, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: e6a637b3becaa8f469fde3f275f5f7d1, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 660926544}
@@ -329,7 +320,7 @@ PrefabInstance:
     - target: {fileID: 5345358942049544015, guid: 8f0e8ba3db9a1a14ab3daf2408cb5e2c,
         type: 3}
       propertyPath: WaitSecond
-      value: 11
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 5455780323900200961, guid: 8f0e8ba3db9a1a14ab3daf2408cb5e2c,
         type: 3}
@@ -338,3 +329,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f0e8ba3db9a1a14ab3daf2408cb5e2c, type: 3}
+--- !u!1 &1882046280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5345358942049544014, guid: 8f0e8ba3db9a1a14ab3daf2408cb5e2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1882046279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1882046281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882046280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fec44f690296b44da38ed4ba73c18c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
+  LoadingType: 7
+  NextSceneName: LVA.Scene01
+  WaitSecond: 10
+  WithLoadingScreen: 0
+  NextSceneIndex: 0
+  CollisionType: 0
+  ObjectTag: 
+  KeyPress: 32
+  usingRigidbody2D: 0
+  TargetRigidbody2D: {fileID: 0}
+  usingRigidbody3D: 0
+  TargetRigidbody3D: {fileID: 0}
+  usingVarString: 0
+  VarScenename: {fileID: 0}

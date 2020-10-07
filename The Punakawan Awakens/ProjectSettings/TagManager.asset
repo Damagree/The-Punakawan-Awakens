@@ -7,6 +7,13 @@ TagManager:
   - Card
   - Word Button
   - Picked Word
+  - BGM
+  - BGM Setting
+  - PlayerAttack
+  - Ground
+  - Interactable
+  - realClue
+  - falseClue
   layers:
   - Default
   - TransparentFX

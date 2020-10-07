@@ -42,10 +42,46 @@ namespace Zetcil
             public KeyboardController KeyboardKey;
 
             [Header("Animation State Settings")]
-            public string AnimationStateName;
+            public string AnimationStateName_TOP;
+            public string AnimationStateName_DOWN;
+            public string AnimationStateName_SIDE;
 
             [Header("Parameter Settings")]
-            public CParameterAnimation Parameter;
+            public CParameterAnimation Parameter_TOP;
+            public CParameterAnimation Parameter_DOWN;
+            public CParameterAnimation Parameter_SIDE;
+
+            [Header("Transition Settings")]
+            public string TransitionValue;
+            [HideInInspector] public string PositiveValue;
+            [HideInInspector] public string NegativeValue;
+
+            [Header("Additional Settings")]
+            public bool ForceAnimation;
+            public bool usingHoldTriggerKey;
+            [SearchableEnum] public KeyCode HoldTriggerKey;
+
+            [Header("Sound Settings")]
+            public bool usingSound;
+            public AudioSource animaAudioSource;
+            public AudioClip animaAudioClip;
+        }
+
+        [System.Serializable]
+        public class CMovingKeyboardState2DTopDown
+        {
+            [Header("Keyboard Settings")]
+            public KeyboardController KeyboardKey;
+
+            [Header("Animation State Settings")]
+            public string AnimationStateName_RIGHT;
+            public string AnimationStateName_TOP;
+            public string AnimationStateName_DOWN;
+
+            [Header("Parameter Settings")]
+            public CParameterAnimation Parameter_RIGHT;
+            public CParameterAnimation Parameter_TOP;
+            public CParameterAnimation Parameter_DOWN;
 
             [Header("Transition Settings")]
             public string TransitionValue;
@@ -92,6 +128,50 @@ namespace Zetcil
 
             [Header("Parameter Settings")]
             public CParameterAnimation Parameter;
+
+            [Header("Transition Settings")]
+            public string TransitionValue;
+            [HideInInspector] public string PositiveValue;
+            [HideInInspector] public string NegativeValue;
+
+            [Header("Additional Settings")]
+            public bool ForceAnimation;
+            public bool FlipAnimation;
+            public bool usingHoldTriggerKey;
+            [SearchableEnum] public KeyCode HoldTriggerKey;
+
+            [Header("Ranged Attack Settings")]
+            public bool usingRangedAttack;
+            public int ActiveBulletIndex = 0;
+            public CKeyboardBullet2D[] Bullet2D;
+
+            [Header("Autolook Settings")]
+            public bool usingAutolook;
+            [Tag]
+            public string LookTargetTag;
+            public float LookRange;
+
+            [Header("Sound Settings")]
+            public bool usingSound;
+            public AudioSource animaAudioSource;
+            public AudioClip animaAudioClip;
+        }
+
+        [System.Serializable]
+        public class CActionKeyboardState2DTopDown
+        {
+            [Header("Keyboard Settings")]
+            [SearchableEnum] public KeyCode[] TriggerKey;
+
+            [Header("Animation State Settings")]
+            public string AnimationStateName_RIGHT;
+            public string AnimationStateName_TOP;
+            public string AnimationStateName_DOWN;
+
+            [Header("Parameter Settings")]
+            public CParameterAnimation Parameter_RIGHT;
+            public CParameterAnimation Parameter_TOP;
+            public CParameterAnimation Parameter_DOWN;
 
             [Header("Transition Settings")]
             public string TransitionValue;
@@ -429,55 +509,94 @@ namespace Zetcil
                             {
                                 if (MovingKeyboardState2D[i].usingHoldTriggerKey && Input.GetKey(MovingKeyboardState2D[i].HoldTriggerKey))
                                 {
-                                    if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Float)
+                                    Debug.Log("key: " + Input.GetKey(KeyCode.A));
+                                    if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
                                     {
-                                        MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
-                                        float dummyvalue = float.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
-                                        TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter.Name, dummyvalue);
-                                        if (MovingKeyboardState2D[i].ForceAnimation)
+                                        if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Float)
                                         {
-                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName))
+                                            MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
+                                            float dummyvalue = float.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
+                                            TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter_SIDE.Name, dummyvalue);
+                                            if (MovingKeyboardState2D[i].ForceAnimation)
                                             {
-                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName);
+                                                if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_SIDE))
+                                                {
+                                                    TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_SIDE);
+                                                }
                                             }
+                                            ExecuteMovingSound(i);
                                         }
-                                        ExecuteMovingSound(i);
                                     }
-                                    if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Int)
+                                    else if (Input.GetKey(KeyCode.W))
+                                    {
+                                        if (MovingKeyboardState2D[i].Parameter_TOP.Type == CParameterType.Float)
+                                        {
+                                            MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
+                                            float dummyvalue = float.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
+                                            TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter_TOP.Name, dummyvalue);
+                                            if (MovingKeyboardState2D[i].ForceAnimation)
+                                            {
+                                                if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_TOP))
+                                                {
+                                                    TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_TOP);
+                                                }
+                                            }
+                                            ExecuteMovingSound(i);
+                                        }
+                                    }
+                                    else if (Input.GetKey(KeyCode.S))
+                                    {
+                                        if (MovingKeyboardState2D[i].Parameter_DOWN.Type == CParameterType.Float)
+                                        {
+                                            MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
+                                            float dummyvalue = float.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
+                                            TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter_DOWN.Name, dummyvalue);
+                                            if (MovingKeyboardState2D[i].ForceAnimation)
+                                            {
+                                                if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_DOWN))
+                                                {
+                                                    TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_DOWN);
+                                                }
+                                            }
+                                            ExecuteMovingSound(i);
+                                        }
+                                    }
+                                    
+                                    if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Int)
                                     {
                                         MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
                                         int dummyvalue = int.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
-                                        TargetAnimator.SetInteger(MovingKeyboardState2D[i].Parameter.Name, dummyvalue);
+                                        TargetAnimator.SetInteger(MovingKeyboardState2D[i].Parameter_SIDE.Name, dummyvalue);
                                         if (MovingKeyboardState2D[i].ForceAnimation)
                                         {
-                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName))
+                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_SIDE))
                                             {
-                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName);
+                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_SIDE);
                                             }
                                         }
                                         ExecuteMovingSound(i);
                                     }
-                                    if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Bool)
+                                    if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Bool)
                                     {
                                         bool dummyvalue = bool.Parse(MovingKeyboardState2D[i].PositiveValue);
-                                        TargetAnimator.SetBool(MovingKeyboardState2D[i].Parameter.Name, dummyvalue);
+                                        TargetAnimator.SetBool(MovingKeyboardState2D[i].Parameter_SIDE.Name, dummyvalue);
                                         if (MovingKeyboardState2D[i].ForceAnimation)
                                         {
-                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName))
+                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_SIDE))
                                             {
-                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName);
+                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_SIDE);
                                             }
                                         }
                                         ExecuteMovingSound(i);
                                     }
-                                    if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Trigger)
+                                    if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Trigger)
                                     {
-                                        TargetAnimator.SetTrigger(MovingKeyboardState2D[i].Parameter.Name);
+                                        TargetAnimator.SetTrigger(MovingKeyboardState2D[i].Parameter_SIDE.Name);
                                         if (MovingKeyboardState2D[i].ForceAnimation)
                                         {
-                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName))
+                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_SIDE))
                                             {
-                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName);
+                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_SIDE);
                                             }
                                         }
                                         ExecuteMovingSound(i);
@@ -485,56 +604,92 @@ namespace Zetcil
                                 }
                                 else if (!MovingKeyboardState2D[i].usingHoldTriggerKey)
                                 {
-                                    if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Float)
+                                    if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
                                     {
-                                        MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
-                                        float dummyvalue = float.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
-                                        TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter.Name, dummyvalue);
-                                        if (MovingKeyboardState2D[i].ForceAnimation)
+                                        if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Float)
                                         {
-                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName))
+                                            MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
+                                            float dummyvalue = float.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
+                                            TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter_SIDE.Name, dummyvalue);
+                                            if (MovingKeyboardState2D[i].ForceAnimation)
                                             {
-                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName);
+                                                if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_SIDE))
+                                                {
+                                                    TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_SIDE);
+                                                }
                                             }
+                                            ExecuteMovingSound(i);
                                         }
-
-                                        ExecuteMovingSound(i);
                                     }
-                                    if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Int)
+                                    else if (Input.GetKey(KeyCode.W))
+                                    {
+                                        if (MovingKeyboardState2D[i].Parameter_TOP.Type == CParameterType.Float)
+                                        {
+                                            MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
+                                            float dummyvalue = float.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
+                                            TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter_TOP.Name, dummyvalue);
+                                            if (MovingKeyboardState2D[i].ForceAnimation)
+                                            {
+                                                if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_TOP))
+                                                {
+                                                    TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_TOP);
+                                                }
+                                            }
+                                            ExecuteMovingSound(i);
+                                        }
+                                    }
+                                    else if (Input.GetKey(KeyCode.S))
+                                    {
+                                        if (MovingKeyboardState2D[i].Parameter_DOWN.Type == CParameterType.Float)
+                                        {
+                                            MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
+                                            float dummyvalue = float.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
+                                            TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter_DOWN.Name, dummyvalue);
+                                            if (MovingKeyboardState2D[i].ForceAnimation)
+                                            {
+                                                if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_DOWN))
+                                                {
+                                                    TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_DOWN);
+                                                }
+                                            }
+                                            ExecuteMovingSound(i);
+                                        }
+                                    }
+                                    if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Int)
                                     {
                                         MovingKeyboardState2D[i].PositiveValue = MovingKeyboardState2D[i].TransitionValue;
                                         int dummyvalue = int.Parse(MovingKeyboardState2D[i].PositiveValue) + 1;
-                                        TargetAnimator.SetInteger(MovingKeyboardState2D[i].Parameter.Name, dummyvalue);
+                                        TargetAnimator.SetInteger(MovingKeyboardState2D[i].Parameter_SIDE.Name, dummyvalue);
                                         if (MovingKeyboardState2D[i].ForceAnimation)
                                         {
-                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName))
+                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_SIDE))
                                             {
-                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName);
+                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_SIDE);
                                             }
                                         }
                                         ExecuteMovingSound(i);
                                     }
-                                    if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Bool)
+                                    if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Bool)
                                     {
                                         bool dummyvalue = bool.Parse(MovingKeyboardState2D[i].PositiveValue);
-                                        TargetAnimator.SetBool(MovingKeyboardState2D[i].Parameter.Name, dummyvalue);
+                                        TargetAnimator.SetBool(MovingKeyboardState2D[i].Parameter_SIDE.Name, dummyvalue);
                                         if (MovingKeyboardState2D[i].ForceAnimation)
                                         {
-                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName))
+                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_SIDE))
                                             {
-                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName);
+                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_SIDE);
                                             }
                                         }
                                         ExecuteMovingSound(i);
                                     }
-                                    if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Trigger)
+                                    if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Trigger)
                                     {
-                                        TargetAnimator.SetTrigger(MovingKeyboardState2D[i].Parameter.Name);
+                                        TargetAnimator.SetTrigger(MovingKeyboardState2D[i].Parameter_SIDE.Name);
                                         if (MovingKeyboardState2D[i].ForceAnimation)
                                         {
-                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName))
+                                            if (!TargetAnimator.GetCurrentAnimatorStateInfo(0).IsName(MovingKeyboardState2D[i].AnimationStateName_SIDE))
                                             {
-                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName);
+                                                TargetAnimator.Play(MovingKeyboardState2D[i].AnimationStateName_SIDE);
                                             }
                                         }
                                         ExecuteMovingSound(i);
@@ -543,6 +698,7 @@ namespace Zetcil
                             }
                         }
                     }
+
                     if (isEnabled && usingActionKeyboardState2D)
                     {
                         for (int i = 0; i < ActionKeyboardState2D.Length; i++)
@@ -900,30 +1056,53 @@ namespace Zetcil
                         {
                             if (MovingKeyboardState2D[i].KeyboardKey.TriggerKeyUp())
                             {
-                                if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Float)
+                                if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
                                 {
-                                    MovingKeyboardState2D[i].NegativeValue = MovingKeyboardState2D[i].TransitionValue;
-                                    float dummyvalue = float.Parse(MovingKeyboardState2D[i].NegativeValue) - 1;
-                                    TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter.Name, dummyvalue);
-                                    ExecuteMovingSound(i, false);
+                                    if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Float)
+                                    {
+                                        MovingKeyboardState2D[i].NegativeValue = MovingKeyboardState2D[i].TransitionValue;
+                                        float dummyvalue = float.Parse(MovingKeyboardState2D[i].NegativeValue) - 1;
+                                        TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter_SIDE.Name, dummyvalue);
+                                        ExecuteMovingSound(i, false);
+                                    }
                                 }
-                                if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Int)
+                                else if (Input.GetKeyUp(KeyCode.W))
+                                {
+                                    if (MovingKeyboardState2D[i].Parameter_TOP.Type == CParameterType.Float)
+                                    {
+                                        MovingKeyboardState2D[i].NegativeValue = MovingKeyboardState2D[i].TransitionValue;
+                                        float dummyvalue = float.Parse(MovingKeyboardState2D[i].NegativeValue) - 1;
+                                        TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter_TOP.Name, dummyvalue);
+                                        ExecuteMovingSound(i, false);
+                                    }
+                                }
+                                else if (Input.GetKeyUp(KeyCode.S))
+                                {
+                                    if (MovingKeyboardState2D[i].Parameter_DOWN.Type == CParameterType.Float)
+                                    {
+                                        MovingKeyboardState2D[i].NegativeValue = MovingKeyboardState2D[i].TransitionValue;
+                                        float dummyvalue = float.Parse(MovingKeyboardState2D[i].NegativeValue) - 1;
+                                        TargetAnimator.SetFloat(MovingKeyboardState2D[i].Parameter_DOWN.Name, dummyvalue);
+                                        ExecuteMovingSound(i, false);
+                                    }
+                                }
+                                if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Int)
                                 {
                                     MovingKeyboardState2D[i].NegativeValue = MovingKeyboardState2D[i].TransitionValue;
                                     int dummyvalue = int.Parse(MovingKeyboardState2D[i].NegativeValue) - 1;
-                                    TargetAnimator.SetInteger(MovingKeyboardState2D[i].Parameter.Name, dummyvalue);
+                                    TargetAnimator.SetInteger(MovingKeyboardState2D[i].Parameter_SIDE.Name, dummyvalue);
                                     ExecuteMovingSound(i, false);
                                 }
-                                if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Bool)
+                                if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Bool)
                                 {
                                     MovingKeyboardState2D[i].NegativeValue = MovingKeyboardState2D[i].TransitionValue;
                                     bool dummyvalue = bool.Parse(MovingKeyboardState2D[i].NegativeValue);
-                                    TargetAnimator.SetBool(MovingKeyboardState2D[i].Parameter.Name, dummyvalue);
+                                    TargetAnimator.SetBool(MovingKeyboardState2D[i].Parameter_SIDE.Name, dummyvalue);
                                     ExecuteMovingSound(i, false);
                                 }
-                                if (MovingKeyboardState2D[i].Parameter.Type == CParameterType.Trigger)
+                                if (MovingKeyboardState2D[i].Parameter_SIDE.Type == CParameterType.Trigger)
                                 {
-                                    TargetAnimator.SetTrigger(MovingKeyboardState2D[i].Parameter.Name);
+                                    TargetAnimator.SetTrigger(MovingKeyboardState2D[i].Parameter_SIDE.Name);
                                     ExecuteMovingSound(i, false);
                                 }
                             }
