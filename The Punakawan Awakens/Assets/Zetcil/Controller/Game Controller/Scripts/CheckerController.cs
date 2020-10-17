@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TechnomediaLabs;
 using UnityEngine.Events;
+using System.Linq;
 
 namespace Zetcil
 {
@@ -47,7 +48,7 @@ namespace Zetcil
         bool isFalseInvoke = false;
 
         [Header("Checker Condition")]
-        public bool RepeatChecking;
+        public bool RepeatChecking = true;
         bool isChecking = true;
 
         [Header("Equal Condition")]
@@ -146,7 +147,7 @@ namespace Zetcil
             {
                 if (VariableType == GlobalVariable.CVariableType.timeVar)
                 {
-                    if (usingEqualCondition && EqualConditionValue == TimeVariables.CurrentValue.ToString())
+                    if (usingEqualCondition && EqualConditionValue == TimeVariables.CurrentValue.ToString()) 
                     {
                         if (!isEqualInvoke)
                         {
@@ -155,7 +156,7 @@ namespace Zetcil
                             Invoke("EqualCooldown", 1);
                             if (!RepeatChecking)
                             {
-                                isChecking = false;
+                                isChecking = true;
                             }
                         }
                     }
@@ -561,7 +562,7 @@ namespace Zetcil
             {
                 if (isChecking)
                 {
-                    if (usingEqualCondition && EqualConditionValue == StringVariables.CurrentValue.ToString())
+                    if (usingEqualCondition && EqualConditionValue == StringVariables.CurrentValue.ToString().Trim())
                     {
                         if (!isEqualInvoke)
                         {
@@ -570,11 +571,13 @@ namespace Zetcil
                             Invoke("EqualCooldown", 1);
                             if (!RepeatChecking)
                             {
-                                isChecking = false;
+                                isChecking = true;
+                                return;
                             }
+                            return;
+                             
                         }
-                    }
-                    if (usingNotEqualCondition && NotEqualConditionValue != StringVariables.CurrentValue.ToString())
+                    }else if (usingNotEqualCondition && NotEqualConditionValue != StringVariables.CurrentValue.ToString().Trim())
                     {
                         if (!isNotEqualInvoke)
                         {
@@ -583,8 +586,10 @@ namespace Zetcil
                             Invoke("NotEqualCooldown", 1);
                             if (!RepeatChecking)
                             {
-                                isChecking = false;
+                                isChecking = true;
+                                return;
                             }
+                            return;
                         }
                     }
                 }

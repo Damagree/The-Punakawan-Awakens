@@ -7572,7 +7572,7 @@ PrefabInstance:
     - target: {fileID: 114935177448193258, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
       propertyPath: CurrentValue
-      value: LVA.Scene04
+      value: LVA.Scene03 Jalan
       objectReference: {fileID: 0}
     - target: {fileID: 6829716459465604332, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}

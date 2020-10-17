@@ -75,11 +75,11 @@ namespace Zetcil
                 }
                 if (TargetSlider.value <= 0)
                 {
-                    TargetSlider.transform.GetChild(1).gameObject.SetActive(false);
+                    TargetSlider.transform.GetChild(2).gameObject.SetActive(false);
                 }
                 else
                 {
-                    TargetSlider.transform.GetChild(1).gameObject.SetActive(true);
+                    TargetSlider.transform.GetChild(2).gameObject.SetActive(true);
                 }
 
                 if (usingAutoRotation)

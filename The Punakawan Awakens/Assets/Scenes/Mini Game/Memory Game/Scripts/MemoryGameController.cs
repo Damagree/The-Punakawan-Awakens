@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TechnomediaLabs;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zetcil;
@@ -42,6 +43,36 @@ public class MemoryGameController : MonoBehaviour
     public FindController findController;
 
     [Space(10)]
+    [Header("Player Setting")]
+    public Image playerIconSprite;
+    public string playerIconPath = "";
+    public GameObject Cepot;
+    public VarHealth cepotHealth;
+    public GameObject Dawala;
+    public VarHealth dawalaHealth;
+    public GameObject Gareng;
+    public VarHealth garengHealth;
+    public float attackValue = 50f;
+    [SerializeField] private Sprite[] playerIcons;
+
+    [Space(10)]
+    [Header("Enemy Setting")]
+    public Image enemyIconSprite;
+    public GameObject enemy;
+    private VarHealth enemyHealth;
+    public float enemyAttack = 10f;
+
+    [Space(10)]
+    [Header("Win Setting")]
+    public GameObject winPanel;
+    public UnityEvent winCondition;
+    
+    [Space(10)]
+    [Header("Lose Setting")]
+    public GameObject losePanel;
+    public UnityEvent loseCondition;
+
+    [Space(10)]
     public bool Debuging;
     [ConditionalField("Debuging")] [SerializeField] private bool firstPick;
     [ConditionalField("Debuging")] [SerializeField] private bool secondPick;
@@ -50,9 +81,69 @@ public class MemoryGameController : MonoBehaviour
 
     private void Awake()
     {
+        InitCards();
+
+        playerIcons = Resources.LoadAll<Sprite>(playerIconPath);
+
+        for (int i = 0; i < playerIcons.Length; i++)
+        {
+            if (playerIcons[i].name == Player.currentCharacter)
+            {
+                playerIconSprite.sprite = playerIcons[i];
+            }
+        }
+
+        if (Player.currentCharacter == "CEPOT")
+        {
+            Cepot.GetComponent<SpriteRenderer>().enabled = true;
+            Gareng.GetComponent<SpriteRenderer>().enabled = false;
+            Dawala.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else if (Player.currentCharacter == "GARENG")
+        {
+            Cepot.GetComponent<SpriteRenderer>().enabled = false;
+            Gareng.GetComponent<SpriteRenderer>().enabled = true;
+            Dawala.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else if (Player.currentCharacter == "DAWALA")
+        {
+            Cepot.GetComponent<SpriteRenderer>().enabled = false;
+            Gareng.GetComponent<SpriteRenderer>().enabled = false;
+            Dawala.GetComponent<SpriteRenderer>().enabled = true;
+        }
+
+        enemyHealth = enemy.GetComponent<VarHealth>();
+    }
+
+    public void Init()
+    {
+
+        GetCards();
+        AddListener();
+        AddFrontCardSprite();
+        Shuffle();
+    }
+
+    private void Start()
+    {
+        Init();
+    }
+
+    public void InitCards()
+    {
         frontSprite = Resources.LoadAll<Sprite>(frontSpritePath);
         puzzleField.GetComponent<GridLayoutGroup>().cellSize = cardSize;
         currentCard.SetCurrentValue(maxCard);
+        if (!cards.IsNullOrEmpty())
+        {
+            cards = new List<Button>();
+            usedSprites = new List<Sprite>();
+            findController.InvokeFindController();
+            for (int i = 0; i < findController.findingObjectTag.Length; i++)
+            {
+                Destroy(findController.findingObjectTag[i]);
+            }
+        }
 
         for (int i = 0; i < maxCard; i++)
         {
@@ -62,17 +153,10 @@ public class MemoryGameController : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        GetCards();
-        AddListener();
-        AddFrontCardSprite();
-        Shuffle();
-
-    }
-
     void GetCards()
     {
+        findController.InvokeFindController();
+        Debug.Log("findcontroller " + findController.findingObjectTag.Length);
         for (int i = 0; i < findController.findingObjectTag.Length; i++)
         {
             cards.Add(findController.findingObjectTag[i].GetComponent<Button>());
@@ -145,9 +229,46 @@ public class MemoryGameController : MonoBehaviour
 
     }
 
-    public void IsFinished()
+    public void IsWinning()
     {
+        Player.isWinning = true;
         Debug.Log("You Win!");
+    }
+
+    public void IsLoosing()
+    {
+        Player.isWinning = false;
+        Debug.Log("You Lose");
+    }
+
+    public void Attack()
+    {
+        Cepot.GetComponent<Animator>().SetTrigger("Attack");
+        Gareng.GetComponent<Animator>().SetTrigger("Attack");
+        Dawala.GetComponent<Animator>().SetTrigger("Attack");
+    }
+
+    public void GetHit()
+    {
+        Cepot.GetComponent<Animator>().SetTrigger("Hit");
+        Gareng.GetComponent<Animator>().SetTrigger("Hit");
+        Dawala.GetComponent<Animator>().SetTrigger("Hit");
+        cepotHealth.SubFromCurrentValue(enemyAttack);
+        dawalaHealth.SubFromCurrentValue(enemyAttack);
+        garengHealth.SubFromCurrentValue(enemyAttack);
+        
+        InitCards();
+    }
+
+    public void EnemyHit()
+    {
+        if (enemy.GetComponent<Animator>() != null)
+        {
+            enemy.GetComponent<Animator>().SetTrigger("Hit");
+        }
+        enemyHealth.SubFromCurrentValue(attackValue);
+        
+        InitCards();
     }
 
     void AddFrontCardSprite()
@@ -189,6 +310,10 @@ public class MemoryGameController : MonoBehaviour
         {
             timerText.text = minute.ToString() + ":00";
         }
-        
+
+        if (timer.CurrentValue <= 0f)
+        {
+            IsLoosing();
+        }
     }
 }

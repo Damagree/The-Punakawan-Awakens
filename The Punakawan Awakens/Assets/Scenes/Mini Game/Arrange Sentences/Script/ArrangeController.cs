@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TechnomediaLabs;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zetcil;
@@ -37,29 +39,117 @@ public class ArrangeController : MonoBehaviour
     public FindController findPickedWordImageController;
 
     [Space(10)]
+    [Header("Player Setting")]
+    public Image playerIconSprite;
+    public string playerIconPath = "";
+    public GameObject Cepot;
+    public VarHealth cepotHealth;
+    public GameObject Dawala;
+    public VarHealth dawalaHealth;
+    public GameObject Gareng;
+    public VarHealth garengHealth;
+    public float attackValue = 50f;
+    [SerializeField] private Sprite[] playerIcons;
+
+    [Space(10)]
+    [Header("Enemy Setting")]
+    public Image enemyIconSprite;
+    public GameObject enemy;
+    private VarHealth enemyHealth;
+    public float enemyAttack = 10f;
+    public UnityEvent eventTimesUp;
+
+    [Space(10)]
     [Header("Debug")]
     [SerializeField] List<GameObject> pickedWordImage = new List<GameObject>();
     [SerializeField] private string[] sentences;
+    private bool checkHit;
 
-    private void Awake()
+
+    public void Init()
     {
-        PickASentences();
-        Shuffle();
-
-        for (int i = 0; i < sentences.Length; i++)
+        if (enemyHealth.CurrentValue > 0 && cepotHealth.CurrentValue > 0 && garengHealth.CurrentValue > 0 && dawalaHealth.CurrentValue > 0)
         {
-            GameObject newButton = Instantiate(buttons);
-            newButton.name = " " + i;
-            newButton.GetComponentInChildren<Text>().text = sentences[i].ToUpper();
-            newButton.transform.SetParent(scrambledObject.transform, false);
+            if (!btns.IsNullOrEmpty())
+            {
+                btns = new List<Button>();
+                pickedWordImage = new List<GameObject>();
+                sentences = null;
+
+                findButtonController.InvokeFindController();
+                for (int i = 0; i < findButtonController.findingObjectTag.Length; i++)
+                {
+                    Destroy(findButtonController.findingObjectTag[i]);
+                }
+
+                findPickedWordImageController.InvokeFindController();
+                for (int i = 0; i < findPickedWordImageController.findingObjectTag.Length; i++)
+                {
+                    Destroy(findPickedWordImageController.findingObjectTag[i]);
+                }
+            }
+
+            PickASentences();
+            Shuffle();
+
+            for (int i = 0; i < sentences.Length; i++)
+            {
+                GameObject newButton = Instantiate(buttons);
+                newButton.name = " " + i;
+                newButton.GetComponentInChildren<Text>().text = sentences[i].ToUpper();
+                newButton.transform.SetParent(scrambledObject.transform, false);
+            }
+
+            Invoke("ButtonListen", 1f);
         }
+        currentSentence.CurrentValue = "";
     }
 
-    private void Start()
+    public void ButtonListen()
     {
         GetButtons();
         AddListener();
-        audioSource.Play();
+        if (enemyHealth.CurrentValue > 0 && cepotHealth.CurrentValue > 0 && garengHealth.CurrentValue > 0 && dawalaHealth.CurrentValue > 0)
+        {
+            audioSource.Play();
+        }
+    }
+
+    private void Awake()
+    {
+
+        enemyHealth = enemy.GetComponent<VarHealth>();
+        Init();
+
+        playerIcons = Resources.LoadAll<Sprite>(playerIconPath);
+
+        for (int i = 0; i < playerIcons.Length; i++)
+        {
+            if (playerIcons[i].name == Player.currentCharacter)
+            {
+                playerIconSprite.sprite = playerIcons[i];
+            }
+        }
+
+        if (Player.currentCharacter == "CEPOT")
+        {
+            Cepot.GetComponent<SpriteRenderer>().enabled = true;
+            Gareng.GetComponent<SpriteRenderer>().enabled = false;
+            Dawala.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else if (Player.currentCharacter == "GARENG")
+        {
+            Cepot.GetComponent<SpriteRenderer>().enabled = false;
+            Gareng.GetComponent<SpriteRenderer>().enabled = true;
+            Dawala.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else if (Player.currentCharacter == "DAWALA")
+        {
+            Cepot.GetComponent<SpriteRenderer>().enabled = false;
+            Gareng.GetComponent<SpriteRenderer>().enabled = false;
+            Dawala.GetComponent<SpriteRenderer>().enabled = true;
+        }
+
     }
 
     private void Update()
@@ -75,6 +165,16 @@ public class ArrangeController : MonoBehaviour
             timerText.text = minute.ToString() + ":00";
         }
 
+        if (timer.CurrentValue <= 0)
+        {
+            checkHit = true;
+            if (checkHit)
+            {
+                eventTimesUp.Invoke();
+                checkHit = false;
+            }
+        }
+
     }
 
     void PickASentences()
@@ -88,6 +188,7 @@ public class ArrangeController : MonoBehaviour
 
     void GetButtons()
     {
+        findButtonController.InvokeFindController();
         for (int i = 0; i < findButtonController.findingObjectTag.Length; i++)
         {
             btns.Add(findButtonController.findingObjectTag[i].GetComponent<Button>());
@@ -222,4 +323,40 @@ public class ArrangeController : MonoBehaviour
         audioSource.gameObject.GetComponent<Button>().onClick.AddListener(audioSource.Play);
     }
 
+    public void Attack()
+    {
+        Cepot.GetComponent<Animator>().SetTrigger("Attack");
+        Gareng.GetComponent<Animator>().SetTrigger("Attack");
+        Dawala.GetComponent<Animator>().SetTrigger("Attack");
+    }
+
+    public void GetHit()
+    {
+        Cepot.GetComponent<Animator>().SetTrigger("Hit");
+        Gareng.GetComponent<Animator>().SetTrigger("Hit");
+        Dawala.GetComponent<Animator>().SetTrigger("Hit");
+        cepotHealth.SubFromCurrentValue(enemyAttack);
+        dawalaHealth.SubFromCurrentValue(enemyAttack);
+        garengHealth.SubFromCurrentValue(enemyAttack);
+
+    }
+
+    public void EnemyHit()
+    {
+        if (enemy.GetComponent<Animator>() != null)
+        {
+            enemy.GetComponent<Animator>().SetTrigger("Hit");
+        }
+        enemyHealth.SubFromCurrentValue(attackValue);
+    }
+
+    public void IsWinning()
+    {
+        Player.isWinning = true;
+    }
+
+    public void IsLoosing()
+    {
+        Player.isWinning = false;
+    }
 }

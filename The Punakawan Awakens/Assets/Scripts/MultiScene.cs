@@ -5,6 +5,7 @@ public class MultiScene : MonoBehaviour
 {
     public void LoadScene(string sceneName)
     {
+        GameObject.FindGameObjectWithTag("MainCamera").SetActive(false);
         SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
     }
 
