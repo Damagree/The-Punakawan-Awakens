@@ -1552,7 +1552,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 41bc5376071bba2479d2ba609c50ebb5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1668,6 +1668,12 @@ MonoBehaviour:
   - sceneName: LVA.Scene01
     theBgm: {fileID: 8300000, guid: 7b1f1fe215d0ed34b87d4d1d1be350f6, type: 3}
   - sceneName: Memory Game
+    theBgm: {fileID: 8300000, guid: 3b92e7377e004024aa201c14849ac9e2, type: 3}
+  - sceneName: Arrange Sentence
+    theBgm: {fileID: 8300000, guid: 3b92e7377e004024aa201c14849ac9e2, type: 3}
+  - sceneName: LVA.Scene03 Jalan
+    theBgm: {fileID: 8300000, guid: 7b1f1fe215d0ed34b87d4d1d1be350f6, type: 3}
+  - sceneName: LVA.Intro
     theBgm: {fileID: 8300000, guid: 3b92e7377e004024aa201c14849ac9e2, type: 3}
   settingSceneName: GM.MenuSetting
   openScenes: []
