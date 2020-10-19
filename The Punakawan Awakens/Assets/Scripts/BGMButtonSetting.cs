@@ -12,21 +12,28 @@ public class BGMButtonSetting : MonoBehaviour
     {
         onText = ONButton.GetComponentInChildren<TextMeshProUGUI>();
         offText = OFFButton.GetComponentInChildren<TextMeshProUGUI>();
+        //if (BGMController.isDisabled)
+        //{
+        //    ONButton.GetComponent<Button>().interactable = false;
+
+        //    OFFButton.GetComponent<Button>().interactable = true;
+        //}
+        //else
+        //{
+        //    ONButton.GetComponent<Button>().interactable = true;
+
+        //    OFFButton.GetComponent<Button>().interactable = false;
+        //}
+
         if (BGMController.isDisabled)
         {
-            ONButton.GetComponent<Button>().interactable = false;
-            onText.alpha = 100f;
-
-            OFFButton.GetComponent<Button>().interactable = true;
-            offText.alpha = 255f;
+            ONButton.SetActive(false);
+            OFFButton.SetActive(true);
         }
         else
         {
-            ONButton.GetComponent<Button>().interactable = true;
-            onText.alpha = 255f;
-
-            OFFButton.GetComponent<Button>().interactable = false;
-            offText.alpha = 100f;
+            ONButton.SetActive(true);
+            OFFButton.SetActive(false);
         }
     }
 
@@ -34,19 +41,13 @@ public class BGMButtonSetting : MonoBehaviour
     {
         if (BGMController.isDisabled)
         {
-            ONButton.GetComponent<Button>().interactable = false;
-            onText.alpha = 100f;
-
-            OFFButton.GetComponent<Button>().interactable = true;
-            offText.alpha = 255f;
+            ONButton.SetActive(false);
+            OFFButton.SetActive(true);
         }
         else
         {
-            ONButton.GetComponent<Button>().interactable = true;
-            onText.alpha = 255f;
-
-            OFFButton.GetComponent<Button>().interactable = false;
-            offText.alpha = 100f;
+            ONButton.SetActive(true);
+            OFFButton.SetActive(false);
         }
     }
 

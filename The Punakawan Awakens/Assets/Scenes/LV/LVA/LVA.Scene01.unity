@@ -6852,7 +6852,7 @@ PrefabInstance:
     - target: {fileID: 114935177448193258, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
       propertyPath: CurrentValue
-      value: LVA.Scene02
+      value: LVA.Scene02 - Prolog - prolog
       objectReference: {fileID: 0}
     - target: {fileID: 6829716459465604332, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
@@ -7087,6 +7087,52 @@ PrefabInstance:
     - target: {fileID: 6912077477628459823, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515768, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0763b3544ae5824d994d5440d25c155,
+        type: 3}
+    - target: {fileID: 6912077477701515768, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,

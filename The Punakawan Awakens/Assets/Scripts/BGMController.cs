@@ -32,25 +32,26 @@ public class BGMController : MonoBehaviour
     [ConditionalField("debug")] public bool isMore;
 
 
-    private void Awake()
+    private void Start()
     {
         gameObject.GetComponent<FindController>().InvokeFindController();
         GameObject[] soundObject = gameObject.GetComponent<FindController>().findingObjectTag;
         if (soundObject.Length > 1)
         {
-            Destroy(gameObject);
+            Destroy(soundObject[1]);
         }
         else
         {
             DontDestroyOnLoad(gameObject);
-            currentScene = SceneManager.GetActiveScene().name;
         }
+
+        currentScene = SceneManager.GetActiveScene().name;
         UpdateScene();
     }
 
     private void FixedUpdate()
     {
-
+        Debug.Log("current scene: " + SceneManager.GetActiveScene().name);
         if (SceneManager.GetActiveScene().name != currentScene)
         {
             UpdateScene();

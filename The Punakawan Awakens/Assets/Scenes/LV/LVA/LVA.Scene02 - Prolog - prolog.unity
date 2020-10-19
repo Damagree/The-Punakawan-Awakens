@@ -3115,78 +3115,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &687663965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6912077477899617436, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-    type: 3}
-  m_PrefabInstance: {fileID: 6912077478119471779}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &687663966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687663965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 687663967}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 20739895}
-        m_MethodName: LoadSceneByClick
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1004053752}
-          m_ObjectArgumentAssemblyTypeName: Zetcil.VarString, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &687663967 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6912077477899617506, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-    type: 3}
-  m_PrefabInstance: {fileID: 6912077478119471779}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687663965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &703724100
 GameObject:
   m_ObjectHideFlags: 0
@@ -3896,7 +3824,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 18.246212, y: 34.22}
+  m_Size: {x: 12.625586, y: 20.359999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -3910,8 +3838,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892083762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.23, y: 0.13, z: 0}
-  m_LocalScale: {x: 0.2940836, y: 0.2940836, z: 0.2940836}
+  m_LocalPosition: {x: 5.23, y: -1.29, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -4690,7 +4618,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -254.27606, y: -143.34439}
+  m_SizeDelta: {x: -398.49802, y: -224.46933}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1074347642
 MonoBehaviour:
@@ -4711,7 +4639,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b05658c16dbaa194f86b9ecc16bdbd1b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60347ec23a9417a44b0955c44125d23f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4729,87 +4657,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074347640}
   m_CullTransparentMesh: 0
---- !u!1 &1117463755
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1117463757}
-  - component: {fileID: 1117463756}
-  m_Layer: 0
-  m_Name: Middle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1117463756
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117463755}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 18.246212, y: 34.22}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1117463757
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117463755}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 0.13, z: 0}
-  m_LocalScale: {x: 0.2940836, y: 0.2940836, z: 0.2940836}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1121830117
 GameObject:
   m_ObjectHideFlags: 0
@@ -5033,7 +4880,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 18.246212, y: 34.22}
+  m_Size: {x: 12.625586, y: 20.359999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -5047,8 +4894,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140338883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.25, y: -0, z: 0}
-  m_LocalScale: {x: 0.2940836, y: 0.2940836, z: 0.2940836}
+  m_LocalPosition: {x: -5.25, y: -1.37, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -7572,7 +7419,7 @@ PrefabInstance:
     - target: {fileID: 114935177448193258, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
       propertyPath: CurrentValue
-      value: LVA.Scene03 Jalan
+      value: LVA.Scene02 - Prolog
       objectReference: {fileID: 0}
     - target: {fileID: 6829716459465604332, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
@@ -7809,10 +7656,25 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.size
-      value: 50
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7837,25 +7699,22 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[3].name
-      value: Bangbang Kaca
+      value: '-'
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[3].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: f744310a3f5025940a5d611543ebab7a,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[3].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[3].sentence
-      value: "\u201CKalian pasti sangat Lelah setelah menempuh perjalanan jauh, bagaimana
-        jika kalian beristirahat dulu? Aku akan menyuruh dayang untuk menyiapkan
-        makanan dan minuman untuk kalian\""
+      value: (suara telepati masuk ke kepala Semar)
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7871,35 +7730,34 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[4].whereToPlace
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[4].sentence
-      value: "\u201CTerima kasih, Gusti Patih. Kebetulan kami bertiga sudah makan
-        di jalan tadi. Bagaimana jika kami langsung saja melihat bangkai-bangkai
-        monster yang menyerang perbatasan itu?\u201D"
+      value: "\u201CGara-gara si Dawala ini mah\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[5].name
-      value: Bangbang Kaca
+      value: Dawala
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[5].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: f744310a3f5025940a5d611543ebab7a,
+      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[5].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[5].sentence
-      value: "\u201CBaiklah kalau begitu.\u201D"
+      value: "\u201CKok jadi saya yang disalahin? Kan akang yang jadi pemeran utamanya
+        oge!\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7909,7 +7767,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[4].dir
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7919,13 +7777,14 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[6].name
-      value: '-'
+      value: Dawala
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[6].characterSprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
+        type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[6].whereToPlace
@@ -7934,7 +7793,9 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[6].sentence
-      value: ...
+      value: "\u201CLagian tahun kemarin kan kita pernah ngebawain pentas Arjuna
+        Sasrabahu melawan Tuyul Kembar dan reaksi si abah biasa-biasa saja. Abah
+        kan bukan orang yang kolot.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7955,23 +7816,23 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[7].dir
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[7].sentence
-      value: "\u201CCyborg?\u201D"
+      value: "\u201CSi abah mah pan emang geus kolot, hihihi!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[8].name
-      value: Bangbang Kaca
+      value: Dawala
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[8].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: f744310a3f5025940a5d611543ebab7a,
+      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7981,23 +7842,25 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[8].sentence
-      value: "\u201CYa. Kami rasa, monster-monster ini dinamakan cyborg\u201D "
+      value: "\u201CBukan kolot itu maksudnya, kang,\u201D \u201CBukan kolot tua.
+        Tapi kolot dalam arti nggak bisa menerima ide-ide dan pemikiran baru yang
+        lebih mencrang dan wow-wow kitu, kang.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[8].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[9].name
-      value: Bangbang Kaca
+      value: Cepot
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[9].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: f744310a3f5025940a5d611543ebab7a,
+      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8007,25 +7870,23 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[9].sentence
-      value: "\u201CDi bangkai cyborg yang lain, kami juga menemukan tulisan yang
-        sama seperti cyborg-17, cyborg-18 dan seterusnya. Kelihatannya mereka menggunakan
-        angka sebagai tanda pengenal\u201D "
+      value: "\u201CAh, bisa weh kamu mah ngomong, Dawala,\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[9].dir
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[10].name
-      value: Cepot
+      value: Dawala
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[10].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
+      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8035,18 +7896,18 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[10].sentence
-      value: "\u201CKumaha menurut kamu, Dawala?\u201D"
+      value: "\"Ya harus bisa atuh, kang. Masa nggak bisa ngomong? Atuh bisu.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[11].name
-      value: Dawala
+      value: Cepot
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[11].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
+      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8056,8 +7917,8 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[11].sentence
-      value: "\u201CSaya mah jadi bingung, kang. Ini teh sebenernya makhluk apaan
-        ya? \""
+      value: "\u201CMungkin si abah kesel karena nggak bisa jaipongan dengan si Munaroh
+        barusan. Kan si abah mah suka jaim, hihihi,\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8078,13 +7939,13 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[12].dir
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[12].sentence
-      value: '"Dibilang monster nggak mungkin, soalnya daging di dalam baju zirah
-        ini sudah busuk. Masa ada bangkai bisa berjalan?"'
+      value: "\u201CHus! Udah ah, kang Cepot! Ngeledek orang tua itu nggak sopan
+        tahu! Pamali!\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8100,30 +7961,28 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[13].dir
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[13].sentence
-      value: "\"Tapi kalau dibilang baju zirah ini berjalan sendiri juga kan tidak
-        mungkin? Ah, saya mah jadi lieur! Pusing!\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[12].whereToPlace
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
+      propertyPath: sentences.Array.data[13].sentence
+      value: "\u201CHayu, kita ikutin abah!\u201D  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: sentences.Array.data[12].whereToPlace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
       propertyPath: sentences.Array.data[14].name
-      value: Cepot
+      value: '-'
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[14].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[14].dir
@@ -8132,20 +7991,18 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[14].sentence
-      value: "\u201CKalau saya yang bikin pusing teh campuran baju zirahnya, Dawala.
-        Logamnya teh keras banget. Selama ini saya mah nggak pernah kenal ada pandai
-        besi yang bisa bikin campuran besi kayak begini di Madyapada,\u201D"
+      value: "Sesampainya di Rumah \u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[15].name
-      value: Dawala
+      value: Cepot
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[15].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
+      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8155,7 +8012,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[15].sentence
-      value: "\u201CEmang keras banget ya, kang?\u201D"
+      value: "\u201CAda apa bah?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8165,13 +8022,13 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[16].name
-      value: Cepot
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[16].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8181,28 +8038,29 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[16].sentence
-      value: "\u201CHe-eh. Sok weh cabak! Pegang nih! Keras!\u201D"
+      value: "\u201CDiuk heula!\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[17].name
-      value: Dawala
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[17].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[17].dir
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[17].sentence
-      value: "\u201CKeras aja atau keras banget, kang?\u201D"
+      value: "\u201CTadi sewaktu kalian main, si Bangbang Kaca mengirim telepati
+        ke abah.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8212,13 +8070,13 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[18].name
-      value: Cepot
+      value: Gareng
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[18].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
+      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8228,7 +8086,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[18].sentence
-      value: "\u201CHmm, bentar coba kita tes dulu!\u201D "
+      value: "\u201CBangbang Kaca?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8244,12 +8102,12 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[19].dir
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[19].sentence
-      value: "\u201CGareng? Kadieu heula! Sini sebentar!\u201D"
+      value: "\u201CAnaknya Gatot Kaca?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8259,28 +8117,29 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[20].name
-      value: Gareng
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[20].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[20].dir
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[20].sentence
-      value: "\u201CAya naon, kang? Ada apa?\u201D"
+      value: "\u201CIa memberi kabar kalau salah satu perbatasan Hastinapura telah
+        diserang oleh sekelompok monster aneh.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[21].name
-      value: '-'
+      value: Cepot
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8291,23 +8150,23 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[21].dir
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[21].sentence
-      value: Bletaaaakk!
+      value: "\u201CApa?! Hastinapura diserang?\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[22].name
-      value: Gareng
+      value: Cepot
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[22].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
+      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8317,18 +8176,19 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[22].sentence
-      value: "\u201CWadaawww!\u201D"
+      value: "\u201CAya anu wani-wani nyerang Hastinapura? Kurang ajar pisan! Mana
+        jelemana, abah? Dieu kitu! Di kadek siah ku bedog aing!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[23].name
-      value: Cepot
+      value: Dawala
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[23].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
+      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8338,8 +8198,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[23].sentence
-      value: "\u201CTuh kan, ceuk urang ge naon, Dawala! Ini logamnya keras banget.
-        Si Gareng aja sampai kesakitan begitu,\u201D"
+      value: "\u201CNtar dulu atuh, kang. Sabar. Kan ceritanya juga baru mulai,\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8360,23 +8219,24 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[24].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[24].sentence
-      value: "\u201CMasa sih? Cikan saya nyobaan,\u201D"
+      value: "\u201CMain kadek, kadek, weh. Dengerin dulu dong. Itu yang nyerang
+        monster. Bukan orang.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[25].name
-      value: '-'
+      value: Cepot
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[25].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
+      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8386,7 +8246,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[25].sentence
-      value: Bletaaakk!
+      value: "\u201CAh, teu paduli uing mah. Jelema dikadek, monster dikadek, hihihi.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8396,44 +8256,47 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[26].name
-      value: Gareng
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[26].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[26].dir
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[26].sentence
-      value: "\u201CWadaawww!\u201D"
+      value: "\u201CMonster-monster yang menyerang wilayah perbatasan itu tidak sama
+        dengan monster-monster yang pernah abah lihat sebelumnya. Ini sangat aneh,\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[27].name
-      value: Dawala
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[27].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[27].dir
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[27].sentence
-      value: "\u201CEh, ternyata bener, kang. Memang keras,\u201D"
+      value: "\u201CBangbang Kaca juga telah mengirimkan gambaran dari kejadian-kejadian
+        penyerangan itu supaya lebih jelas. Sok ku maraneh tempo. Abah kirim telepatinya
+        sekarang.\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8448,19 +8311,21 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[0].sentence
-      value: Setelah sampai di istana
+      value: 'Setelah pertunjukan dimulai, dan acara sedang meriah-meriahnya karena
+        melihat
+
+        penampilan dari putra-putra Semar itu...'
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[1].name
-      value: Bangbang Kaca
+      value: '-'
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[1].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: f744310a3f5025940a5d611543ebab7a,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[1].dir
@@ -8469,33 +8334,32 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[1].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[1].sentence
-      value: "\u201CSelamat datang, astrajingga\u201D"
+      value: Semar juga menikmati pertunjukan yang dibawakan oleh ketiga anaknya.
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[2].name
-      value: Cepot
+      value: '-'
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[2].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[2].sentence
-      value: "\u201CSalam hormat Gusti Patih\u201D"
+      value: '*Biiipp'
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[7].whereToPlace
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8505,7 +8369,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[13].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8515,43 +8379,43 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[17].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[19].whereToPlace
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[20].whereToPlace
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[21].whereToPlace
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
-      propertyPath: sentences.Array.data[26].whereToPlace
+      propertyPath: sentences.Array.data[21].whereToPlace
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: sentences.Array.data[26].whereToPlace
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[27].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[28].name
-      value: Cepot
+      value: Gareng
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[28].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
+      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8561,7 +8425,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[28].sentence
-      value: "\u201CNah kan, bener. Ini keras!\u201D"
+      value: "\u201CWaduh? Monster naon eta euy?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8577,12 +8441,13 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[29].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[29].sentence
-      value: "\u201CIni keras!\u201D"
+      value: "\u201CTangan dan badannya keras banget. Tuh lihat, prajurit yang disana
+        sampai kesakitan\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8598,55 +8463,55 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[30].whereToPlace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[30].sentence
-      value: "\u201CKeras pisan!\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[30].dir
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
+      propertyPath: sentences.Array.data[30].sentence
+      value: "\u201CKakara ayeuna uing ningali monster jiga kitu\u201D \u201CMonster
+        ap aitu teh, abah?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: sentences.Array.data[30].dir
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
       propertyPath: sentences.Array.data[31].name
-      value: Dawala
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[31].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[31].dir
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[31].sentence
-      value: "\u201CTapi saya masih ragu-ragu, Kang,\u201D \u201CUntuk lebih memastikan,
-        gimana kalau kita timpuk si Gareng dengan badan monster yang di sana itu?\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[31].whereToPlace
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
+      propertyPath: sentences.Array.data[31].sentence
+      value: "\u201CPuguhan teu nyaho!\u201D "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: sentences.Array.data[31].whereToPlace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
       propertyPath: sentences.Array.data[32].name
-      value: Cepot
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[32].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8656,18 +8521,18 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[32].sentence
-      value: "\u201CSetuju!\u201D"
+      value: "\u201CKalau tahu mah si Bangbang kKaca nggak bakalan nanya atuh!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[33].name
-      value: Gareng
+      value: Cepot
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[33].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
+      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8677,7 +8542,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[33].sentence
-      value: "\"Eh, eh, udah, udah, udah!\u201D "
+      value: "\u201COh, Kirain. Hihihi\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8687,41 +8552,42 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[34].name
-      value: Gareng
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[34].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[34].dir
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[34].sentence
-      value: "\u201CJangan becanda atuh, kang! Iya saya tahu kalau baju zirah monster
-        itu teh keras banget. Saya tahu! Saya setuju! Kepala dan kaki saya sudah
-        cukup jadi bahan uji coba. Cukup, kang, cukup!\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[34].whereToPlace
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
+      propertyPath: sentences.Array.data[34].sentence
+      value: "\u201CAbah sudah membantu puluhan ksatria Hastinapura dari berbagai
+        generasi. Dan hal itu akan terus abah lakukan. Karena sudah menjadi kewajiban
+        kita sebagai Punakawan, untuk membantu dan membimbing para ksatria jika mereka
+        menemui kesulitan,\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: sentences.Array.data[34].whereToPlace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
       propertyPath: sentences.Array.data[35].name
-      value: '-'
+      value: Cepot
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[35].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
+      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8731,7 +8597,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[35].sentence
-      value: Bletaaakk!
+      value: "\u201CSatuju!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8741,28 +8607,29 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[36].name
-      value: Gareng
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[36].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[36].dir
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[36].sentence
-      value: '"Wadaaaawwww"'
+      value: "\u201COleh karena itu, abah sekarang tugaskan kalian bertiga untuk
+        pergi ke Hastinapura dan menyelidiki siapa dalang di balik penyerangan ini!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[36].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8778,54 +8645,54 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[37].whereToPlace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[37].sentence
-      value: '"Hahahaha!"'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[37].dir
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
+      propertyPath: sentences.Array.data[37].sentence
+      value: "\u201CSiap, Bah!\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: sentences.Array.data[37].dir
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
       propertyPath: sentences.Array.data[38].name
-      value: Dawala
+      value: Gareng
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[38].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
+      objectReference: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[38].dir
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[38].sentence
-      value: "\u201CTapi yang aneh mah ini, kang,\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[38].whereToPlace
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
+      propertyPath: sentences.Array.data[38].sentence
+      value: "\u201CAbah nggak ikut?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: sentences.Array.data[38].whereToPlace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
       propertyPath: sentences.Array.data[39].name
-      value: Cepot
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[39].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8835,401 +8702,102 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[39].sentence
-      value: "\u201CWisnu Corporation?\u201D"
+      value: "\u201CAbah mah sudah tua atuh, asam urat, kolesterol sama darah tinggi
+        abah suka kumat\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[40].name
-      value: Bangbang Kaca
+      value: Semar
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[40].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: f744310a3f5025940a5d611543ebab7a,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[40].whereToPlace
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[40].sentence
-      value: "\u201CBenar sekali,\u201D "
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[2].dir
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[2].whereToPlace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[22].whereToPlace
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[24].dir
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[28].dir
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[29].dir
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[32].dir
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[39].dir
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[39].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[39].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[40].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[40].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[41].name
-      value: Bangbang Kaca
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[41].characterSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f744310a3f5025940a5d611543ebab7a,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[41].whereToPlace
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[41].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[41].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[41].sentence
-      value: "\u201CKami juga sempat periksa beberapa punggung monster yang lain.
-        Semuanya terdapat kata-kata ini. Wisnu Corporation. Soal Wisnu, aku ragu
-        jika ini ada hubungannya dengan Batara Wisnu. Lalu soal Corporation itu,
-        kami sama sekali tidak tahu apa artinya.\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[42].name
-      value: CEPOT
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[42].characterSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[42].whereToPlace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[42].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[42].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[42].sentence
-      value: "\u201CCorporation teh kalau nggak salah artinya pabrik. Pabrik raksasa
-        yang bentuknya gede, pegawainya banyak dan suka bikin benda-benda dalam jumlah
-        yang banyak juga,\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[43].name
-      value: Bangbang Kaca
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[43].characterSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f744310a3f5025940a5d611543ebab7a,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[43].whereToPlace
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[43].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[43].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[43].sentence
-      value: "\u201CMemangnya itu bahasa apa, Astrajingga?\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[44].name
-      value: Cepot
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[44].characterSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[44].whereToPlace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[44].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[44].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[44].sentence
-      value: "\u201CItu teh bahasa Inggris,\u201D "
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[45].name
-      value: Cepot
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[45].characterSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[45].whereToPlace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[45].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[45].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[45].sentence
-      value: "\u201CBahasa yang suka dipake di kepulauan Britania Raya. Bahasa ini
-        teh asalnya dari dialek Anglo-Frisia. \""
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[46].name
-      value: Cepot
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[46].characterSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[46].whereToPlace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[46].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[46].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[46].sentence
-      value: "\"Di negeri seberang mah bahasa ini sering dipake. Tapi saya ragu kalau
-        penduduk di negeri seberang itu bisa bikin cyborg sekuat ini.\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[47].name
-      value: Dawala
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[47].characterSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[47].whereToPlace
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[47].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[47].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[47].sentence
-      value: "\u201CTerus kira-kira siapa atuh yang bikinnya, kang?\u201D"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[48].name
-      value: Cepot
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[48].characterSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[48].whereToPlace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[48].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[48].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[48].sentence
-      value: "\u201CKayaknya mah kita juga harus selidiki daerah sekitar perbatasan,
-        Gusti Patih. Mungkin kita bisa menemukan petunjuk darimana mereka berasal.\u201D  "
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[49].name
-      value: '-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[49].characterSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[49].whereToPlace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[49].item
-      value: 
-      objectReference: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd,
-        type: 3}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[49].isMiddleSpriteActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[49].sentence
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: sentences.Array.data[47].dir
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: middleSprite
-      value: 
-      objectReference: {fileID: 1117463755}
-    - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
-        type: 3}
-      propertyPath: typingSpeed
-      value: 0.005
+      value: "\u201CSekarang mah sok lah giliran para generasi muda untuk menyelamatkan
+        Hastinapura!\u201D"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16c41a3da16d1f04892d9d9a9cb44303, type: 3}
+--- !u!1 &6912077478119471780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6912077477899617436, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+    type: 3}
+  m_PrefabInstance: {fileID: 6912077478119471779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6912077478119471781 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6912077477899617506, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+    type: 3}
+  m_PrefabInstance: {fileID: 6912077478119471779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6912077478119471780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6912077478119471782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6912077478119471780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 6912077478119471781}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 20739895}
+        m_MethodName: LoadSceneByClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1004053752}
+          m_ObjectArgumentAssemblyTypeName: Zetcil.VarString, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

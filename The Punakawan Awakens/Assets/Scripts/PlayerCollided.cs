@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+using Zetcil;
 
 public class PlayerCollided : MonoBehaviour
 {
 
     public DialogueManager dialogue;
     public GameObject pressF;
+    public string nextScene;
 
     [Space(20)]
     [Header("Battle Scene")]
@@ -72,7 +75,10 @@ public class PlayerCollided : MonoBehaviour
                 isCollided = true;
                 pressF.SetActive(true);
             }
-            
+        }
+        else if (collision.gameObject.tag == "realClue")
+        {
+            SceneManager.LoadScene(nextScene);
         }
     }
 

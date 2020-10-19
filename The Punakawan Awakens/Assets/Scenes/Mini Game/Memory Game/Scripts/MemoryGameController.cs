@@ -256,7 +256,9 @@ public class MemoryGameController : MonoBehaviour
         cepotHealth.SubFromCurrentValue(enemyAttack);
         dawalaHealth.SubFromCurrentValue(enemyAttack);
         garengHealth.SubFromCurrentValue(enemyAttack);
-        
+
+        enemy.GetComponent<Animator>().SetTrigger("Attack");
+
         InitCards();
     }
 

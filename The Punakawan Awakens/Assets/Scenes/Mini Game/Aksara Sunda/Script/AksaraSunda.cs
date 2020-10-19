@@ -14,7 +14,7 @@ public class AksaraSunda : MonoBehaviour
     [SerializeField] GameObject panelPickedWord;
     [SerializeField] GameObject pickedWord;
     [SerializeField] GameObject buttons;
-    [SerializeField] int currentIdx = 0;
+    [SerializeField] GameObject dictionaryPanel;
     [SerializeField] private VarString currentSentence;
     [SerializeField] private CheckerController checkerController;
 
@@ -84,6 +84,8 @@ public class AksaraSunda : MonoBehaviour
                 {
                     Destroy(findPickedWordImageController.findingObjectTag[i]);
                 }
+
+                Destroy(GameObject.FindGameObjectWithTag("Scramble Words"));
             }
 
             PickASentences();
@@ -173,15 +175,11 @@ public class AksaraSunda : MonoBehaviour
     void PickASentences()
     {
         int randomIndex = Random.Range(0, aksaraPrefabs.Length);
-        GameObject aks = Instantiate(aksaraPrefabs[randomIndex]);
-        aks.transform.SetParent(panelSoal.transform);
-        aks.transform.localScale = new Vector3(.1f, .1f, .1f);
+        GameObject aks = Instantiate(aksaraPrefabs[randomIndex], panelSoal.transform, false);
         aks.transform.localPosition = new Vector3(0f, 0f, 0f);
         checkerController.EqualConditionValue = aksaraPrefabs[randomIndex].name.Trim().ToUpper();
         checkerController.NotEqualConditionValue = aksaraPrefabs[randomIndex].name.Trim().ToUpper();
         sentences = aksaraPrefabs[randomIndex].name.ToUpper().ToCharArray();
-        
-        currentIdx = randomIndex;
     }
 
     void GetButtons()
@@ -332,5 +330,10 @@ public class AksaraSunda : MonoBehaviour
     public void IsLoosing()
     {
         Player.isWinning = false;
+    }
+
+    public void ClickDict()
+    {
+        dictionaryPanel.SetActive(true);
     }
 }

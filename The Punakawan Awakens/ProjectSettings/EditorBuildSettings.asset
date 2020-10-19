@@ -30,23 +30,32 @@ EditorBuildSettings:
     path: Assets/Scenes/LV/LVA/LVA.Scene01.unity
     guid: 437dcdb784b9155419723ece94cd0357
   - enabled: 1
+    path: Assets/Scenes/LV/LVA/LVA.Scene02 - Prolog - prolog.unity
+    guid: 46fb1b80d2b6c4b47aaaa2f58c644bc7
+  - enabled: 1
+    path: Assets/Scenes/LV/LVA/LVA.Scene02 - Prolog.unity
+    guid: e54f53b9a89829a4e95ed41adbcb4ad8
+  - enabled: 1
     path: Assets/Scenes/LV/LVA/LVA.Scene02.unity
     guid: b7d76724acc9ae04d8079ddc96d7f04a
   - enabled: 1
-    path: Assets/Scenes/LV/LVA/LVA.Scene03.unity
-    guid: ef73d23fed0c0064d9b3668ff95e61cd
+    path: Assets/Scenes/LV/LVA/LVA.Scene03 - Prolog.unity
+    guid: 347ebe12667a3564f80b670d36173182
   - enabled: 1
     path: Assets/Scenes/LV/LVA/LVA.Scene03 Jalan.unity
     guid: 9fa78e980a7354241a1fd4c8460bcd9d
   - enabled: 1
     path: Assets/Scenes/LV/LVA/LVA.Scene04.unity
-    guid: 671427716a3010a4b924a8c2d098a147
+    guid: 2e0f8356e71ecbc429d02516740ee667
   - enabled: 1
     path: Assets/Scenes/Mini Game/Arrange Sentences/Arrange Sentence.unity
     guid: 892345ee48d52fb4f8776a1fe88e08c4
   - enabled: 1
     path: Assets/Scenes/Mini Game/Memory Game/Memory Game.unity
     guid: f83a4eb8168acfb40ac4191f3b1ba180
+  - enabled: 1
+    path: Assets/Scenes/Mini Game/Aksara Sunda/Aksara Sunda.unity
+    guid: f2d81ee9f7a4a9649ad34fe5c3925152
   - enabled: 1
     path: Assets/Zetcil/Controller/Game Controller/Loading/Scene/ZetLoadingScreen.unity
     guid: f76ec0fd530892747a9f77a5aeed0da3

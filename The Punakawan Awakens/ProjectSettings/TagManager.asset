@@ -15,6 +15,7 @@ TagManager:
   - realClue
   - falseClue
   - Obstacle
+  - Scramble Words
   layers:
   - Default
   - TransparentFX

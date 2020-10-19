@@ -3824,7 +3824,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 18.246212, y: 34.22}
+  m_Size: {x: 12.625586, y: 20.359999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -3838,8 +3838,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892083762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.23, y: 0.13, z: 0}
-  m_LocalScale: {x: 0.2940836, y: 0.2940836, z: 0.2940836}
+  m_LocalPosition: {x: 5.23, y: -1.29, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -4880,7 +4880,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 18.246212, y: 34.22}
+  m_Size: {x: 12.625586, y: 20.359999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -4894,8 +4894,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140338883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.25, y: -0, z: 0}
-  m_LocalScale: {x: 0.2940836, y: 0.2940836, z: 0.2940836}
+  m_LocalPosition: {x: -5.25, y: -1.37, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -7419,7 +7419,7 @@ PrefabInstance:
     - target: {fileID: 114935177448193258, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
       propertyPath: CurrentValue
-      value: LVA.Scene03
+      value: LVA.Scene03 Jalan
       objectReference: {fileID: 0}
     - target: {fileID: 6829716459465604332, guid: e33649a9f789ac74c9622150d0174c79,
         type: 3}
@@ -7654,6 +7654,21 @@ PrefabInstance:
     - target: {fileID: 6912077477628459823, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912077477701515770, guid: 16c41a3da16d1f04892d9d9a9cb44303,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
@@ -8036,7 +8051,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sentences.Array.data[17].characterSprite
       value: 
-      objectReference: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a,
+      objectReference: {fileID: 21300000, guid: 18f0ef8ad166978418de25bd4d13e1f8,
         type: 3}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8298,9 +8313,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[0].sentence
-      value: "Waktunya telah tiba, seluruh penduduk tumaritis berkumpul di tengah
-        desa untuk\r\nMenyaksikan sandiwara yang dimainkan putra-putra Semar itu
-        yang diberi judul\r\n\u201CAstrajingga dan Shinta\u201D\r\n"
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
