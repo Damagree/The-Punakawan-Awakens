@@ -4976,7 +4976,7 @@ MonoBehaviour:
         m_MethodName: LoadSceneByClick
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 2057258781}
           m_ObjectArgumentAssemblyTypeName: Zetcil.VarString, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0

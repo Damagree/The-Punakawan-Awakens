@@ -1040,6 +1040,10 @@ MonoBehaviour:
     theBgm: {fileID: 8300000, guid: 3b92e7377e004024aa201c14849ac9e2, type: 3}
   - sceneName: Aksara Sunda
     theBgm: {fileID: 8300000, guid: 3b92e7377e004024aa201c14849ac9e2, type: 3}
+  - sceneName: LVA.Scene04 - battle
+    theBgm: {fileID: 8300000, guid: 3b92e7377e004024aa201c14849ac9e2, type: 3}
+  - sceneName: LVA.Scene05
+    theBgm: {fileID: 8300000, guid: 7b1f1fe215d0ed34b87d4d1d1be350f6, type: 3}
   settingSceneName: GM.MenuSetting
   openScenes: []
   debug: 1

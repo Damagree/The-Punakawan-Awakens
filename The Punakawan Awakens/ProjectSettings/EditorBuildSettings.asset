@@ -45,8 +45,17 @@ EditorBuildSettings:
     path: Assets/Scenes/LV/LVA/LVA.Scene03 Jalan.unity
     guid: 9fa78e980a7354241a1fd4c8460bcd9d
   - enabled: 1
+    path: Assets/Scenes/LV/LVA/LVA.Scene04 - battle.unity
+    guid: 857bed2b493b6c04e8c52723a8747cca
+  - enabled: 1
     path: Assets/Scenes/LV/LVA/LVA.Scene04.unity
     guid: 2e0f8356e71ecbc429d02516740ee667
+  - enabled: 1
+    path: Assets/Scenes/LV/LVA/LVA.Scene05.unity
+    guid: ae6aa1120492aca42adbc7a1e1bcae43
+  - enabled: 1
+    path: Assets/Scenes/LV/LVA/LVA.Scene06.unity
+    guid: f098f5cf82a54ce47a57739a204a192f
   - enabled: 1
     path: Assets/Scenes/Mini Game/Arrange Sentences/Arrange Sentence.unity
     guid: 892345ee48d52fb4f8776a1fe88e08c4
