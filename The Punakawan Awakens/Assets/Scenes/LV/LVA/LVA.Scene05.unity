@@ -4592,7 +4592,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CJoged Siaaahh!\u201D "
+    sentence: "\u201CTarik Cak!\u201D "
   - name: Cyborg Commander
     characterSprite: {fileID: 21300000, guid: 71d8f5ae4e9f52841a347f8c5df07216, type: 3}
     dir: 0
@@ -4621,7 +4621,7 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CCilaka euy!\u201D"
+    sentence: "\u201CBahaya!\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
@@ -4635,8 +4635,8 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CPercuma Dawala! Si gareng mah kalau lagi ngamuk omongan kita
-      nggak bakalan di denger!\u201D"
+    sentence: "\u201CPercuma Dawala! Si gareng kalau lagi ngamuk omongan kita nggak
+      bakalan di denger!\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
@@ -4664,28 +4664,28 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CGeus gareng! Stoooopp! Ceuli uing bisa ancur atuh euy!\u201D"
+    sentence: "\u201CWes gareng! Stoooopp! kuping ku bisa ancur!\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CKaang! Kang Cepoot! Akaaaaaanggg CEPOOOOTTT!!\u201D"
+    sentence: "\u201CCaak! Cak Cepoot! Caaak CEPOOOOTTT!!\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201Chm? Naon Dawala?\u201D"
+    sentence: "\u201Chm? Ono opo Dawala?\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CEta kang, Lubang hitamnya makin banyak!\u201D"
+    sentence: "\u201CItu cak, Lubang hitamnya makin banyak!\u201D"
   - name: '-'
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
@@ -4720,7 +4720,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: Dalam kekacauan itu, cepot terkena petir yang menyambar dari luban-lubang
+    sentence: Dalam kekacauan itu, cepot terkena petir yang menyambar dari lubang-lubang
       hitam misterius
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
@@ -4728,7 +4728,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201Ckang cepooott!!!! Gareeeengg! Tulungaan euuuuyy!\u201D"
+    sentence: "\u201CCak cepooott!!!! Gareeeengg! Tolong!\u201D"
   - name: '-'
     characterSprite: {fileID: 0}
     dir: 0
@@ -4756,7 +4756,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CGoblok maneh Gareeengg!\u201D"
+    sentence: "\u201CGoblok kowe Gareeengg!\u201D"
   typingSpeed: 0.02
   eventAfterDialogue:
     m_PersistentCalls:

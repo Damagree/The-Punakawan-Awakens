@@ -4614,7 +4614,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CTapi ini aneh, kang. Kalau jejaknya berawal dari sini... Terus
+    sentence: "\u201CTapi ini aneh, cak. Kalau jejaknya berawal dari sini... Terus
       mereka datang dari mana? Masa datang dari langit?\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
@@ -4629,7 +4629,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CKayaknya nggak mungkin, kang!\u201D "
+    sentence: "\u201CKayaknya nggak mungkin, cak!\u201D "
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
@@ -4644,8 +4644,8 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CEh kang, lagian kalua para cyborg itu bisa terbang, ngapain
-      pada ngumpul dulu di sini?\u201D"
+    sentence: "\u201CEh cak, lagian kalau para cyborg itu bisa terbang, ngapain pada
+      ngumpul dulu di sini?\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
@@ -4675,14 +4675,14 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CKang Cepot? \u201C"
+    sentence: "\u201CCak Cepot? \u201C"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CYa aitu maksud saya tadi, kang\u201D"
+    sentence: "\u201CYa itu maksud saya tadi, cak\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
@@ -4698,35 +4698,35 @@ MonoBehaviour:
     item: {fileID: 0}
     isMiddleSpriteActive: 0
     sentence: "\u201CBisa juga sih, Tapi saya masih ngerasa ada satu hal yang ganjil
-      kang\u201D"
+      cak\u201D"
   - name: Gareng
     characterSprite: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CKang, kang Cepot\u201D"
+    sentence: "\u201CCak, cak Cepot\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CNaon, Gareng? Cupat-cepot wae ti tatadi\u201D"
+    sentence: "\u201COpo, Gareng? Cupat-cepot ae ket mau\u201D"
   - name: Gareng
     characterSprite: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201Citu lihat, kang! Di atas awan!\u201D"
+    sentence: "\u201Citu lihat, cak! Di atas awan!\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CKang Cepot\u2026\u201D"
+    sentence: "\u201CCak Cepot\u2026\u201D"
   - name: Cyborg Commander
     characterSprite: {fileID: 21300000, guid: 71d8f5ae4e9f52841a347f8c5df07216, type: 3}
     dir: 0
@@ -4785,14 +4785,14 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CKenapa kang? Kunaon?\u201D"
+    sentence: "\u201CKenapa cak? Lapo?\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CCeuk si cyborg eta, irung maneh jiga sosis!\u201D"
+    sentence: "\u201CJare si cyborg iku, irung mu koyok sosis!\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
@@ -4855,21 +4855,21 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CDawalaaaaa!! Nyeri Dawalaaa!\u201D"
+    sentence: "\u201CDawalaaaaa!! Lara Dawalaaa!\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CHah? Seriusan kang? Sakit banget kitu?\u201D"
+    sentence: "\u201CHah? Seriusan cak? Sakit banget gitu?\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CLeungeun aing di tincak ku maneh! Nyeri nyaho!\u201D"
+    sentence: "\u201CTanganku dipidek kowe! Loro bajindul!\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
@@ -4884,14 +4884,14 @@ MonoBehaviour:
     item: {fileID: 0}
     isMiddleSpriteActive: 0
     sentence: "\u201CCyborg-cyborg itu udah pada bosen hidup ya? Nggak pake ngomong,
-      nggak pake permisi, ujug-ujug main tembak wae! Di kadek siah ku aing!\u201D"
+      nggak pake permisi, moro-moro main tembak ae! Di bacok karo aku!\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CSetuju kang! Sebaiknya kita beri mereka pelajaran! Pelajaran
+    sentence: "\u201CSetuju cak! Sebaiknya kita beri mereka pelajaran! Pelajaran
       matematika dan trigonometri!\u201D"
   - name: Cyborg Commander
     characterSprite: {fileID: 21300000, guid: 71d8f5ae4e9f52841a347f8c5df07216, type: 3}
@@ -4928,14 +4928,14 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CManeh siap, Dawala?\u201D"
+    sentence: "\u201CKowe siap, Dawala?\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CSiap kang!\u201D"
+    sentence: "\u201CSiap cak!\u201D"
   - name: Gareng
     characterSprite: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1, type: 3}
     dir: 0

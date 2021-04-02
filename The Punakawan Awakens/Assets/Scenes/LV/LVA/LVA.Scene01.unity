@@ -7179,7 +7179,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[3].sentence
-      value: "\u201CBeda atuh!\u201D"
+      value: "\u201CBeda!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7201,9 +7201,9 @@ PrefabInstance:
         type: 3}
       propertyPath: sentences.Array.data[4].sentence
       value: " \u201CKalau cerita Ramayana dan Shinta mah udah biasa. Anak umur empat
-        tahun juga sudah pada hapal. Ini mah cerita baru lagi. Karangan saya sendiri.
+        tahun juga sudah pada hafal. Ini mah cerita baru lagi. Karangan saya sendiri.
         Judulnya teh Dawala dan Shinta. Atau judul lengkapnya Raden Dawala nan Gagah
-        Perkasa dan Putri Shinta nan Cantik Jelita. Kumaha? Keren pan?\u201D"
+        Perkasa dan Putri Shinta nan Cantik Jelita. piye? Keren kan?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7224,8 +7224,8 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[5].sentence
-      value: "\u201CMana ada raden gagah yang hidungnya mancung kayak pinokio! Uing
-        mah can pernah ningali anu jiga kitu! Maneh mah aya-aya wae, Dawala!\u201D "
+      value: "\u201CMana ada raden gagah yang hidungnya mancung kayak pinokio! kulo
+        durung pernah delo sing koyok ngono! onooooo wae, Dawala!\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7261,7 +7261,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[6].sentence
-      value: "\u201CAh, nggak usah bawa-bawa hidung atuh, kang,\u201D "
+      value: "\u201CAh, nggak usah bawa-bawa hidung atuh, cak,\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7309,7 +7309,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[8].sentence
-      value: "\u201CAya adegan pegang-pegangan tangan nggak?\u201D"
+      value: "\u201Cono adegan pegang-pegangan tangan nggak?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7335,7 +7335,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[9].sentence
-      value: "\u201CAda atuh, Kang!\u201D"
+      value: "\u201CAda atuh, cak!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7382,7 +7382,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[11].sentence
-      value: "\u201CEta oge aya!\u201D"
+      value: "\u201CItu juga ada!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7455,7 +7455,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[14].sentence
-      value: "\u201COke. Saya satuju, Tapi judulnya kudu diganti!\u201D"
+      value: "\u201COke. Saya setuju, Tapi judulnya kudu diganti!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7476,7 +7476,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[15].sentence
-      value: "\u201CJadi naon? Jadi apa?\u201D"
+      value: "\u201CJadi opo?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7523,7 +7523,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[17].sentence
-      value: "\u201CEeee, si akang mah!\u201D "
+      value: "\u201CEeeeeeee......\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7550,7 +7550,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sentences.Array.data[18].sentence
       value: "\u201CDi mana-mana juga yang jadi tokoh utama mah harus yang paling
-        tua dan paling ganteng. Bener teu, Reng?\u201D"
+        tua dan paling ganteng. Bener nggak, Reng?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7571,7 +7571,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[19].sentence
-      value: "\u201CBener pisan, kang.\u201D "
+      value: "\u201CBener banget, kang.\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7597,7 +7597,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[20].sentence
-      value: "\u201CTapi akang mah pantesnya juga jangan jadi Ramayana,\u201D "
+      value: "\u201CTapi cak astrajingga mah pantesnya juga jangan jadi Ramayana,\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7618,8 +7618,8 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[21].sentence
-      value: "\u201CAkang mah pantesnya jadi Rahwana. Pan Rahwana kalau lagi marah
-        kulitnya jadi merah.\u201D"
+      value: "\u201Ccak astrajingga mah pantesnya jadi Rahwana. Pan Rahwana kalau
+        lagi marah kulitnya jadi merah.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -7640,7 +7640,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[22].sentence
-      value: "\u201CTerus gimana atuh jadinya ini teh, kang? Kita mau bawain cerita
+      value: "\u201CTerus gimana atuh jadinya ini tuh, cak? Kita mau bawain cerita
         apaan?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
@@ -7689,7 +7689,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sentences.Array.data[24].sentence
       value: "\u201CSupaya jujur, adil, genah, merenah, tumaninah serta sesuai dengan
-        ketentuan dan tata perundangan yang berlaku, hihihi, keren nya uing bahasana?
+        ketentuan dan tata perundangan yang berlaku, hihihi, keren nya kulo bahasanya?
         Gimana kalau kita putuskan saja dengan suara terbanyak. Siapa yang setuju
         dengan cerita Astrajingga dan Shinta, ngacung!\u201D"
       objectReference: {fileID: 0}
@@ -7738,8 +7738,8 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[26].sentence
-      value: "\u201CSatu sama, Sok Gareng! Sekarang kamu! Mau ngedukung siapa? Rek
-        ngadukung uing, atawa si Dawala?!\u201D"
+      value: "\u201CSatu sama, Sok Gareng! Sekarang kamu! Mau ngedukung siapa? gelem
+        dukung kulo, atau si Dawala?!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}

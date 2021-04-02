@@ -6493,19 +6493,19 @@ MonoBehaviour:
   currentSentence: {fileID: 2980270579871539173}
   checkerController: {fileID: 2980270579883637271}
   peribahasa:
-  - Halodo sataun lantis ku hujan sapoe
-  - Peureum kadeuleu beunta karasa
-  - Daek Macok Embung Dipacok
-  - Dosa Salaput Hulu
-  - Katempuhan buntut maung
-  - Monyet ngagugulung kalapa
-  - Rea ketan rea keton
-  - Silih jenggut jeung nu dugul
-  - Teng manuk teng anak merak kukuncungan
-  - Tuturut munding
+  - Alon alon waton kelakon
+  - Sopo siro sopo ingsun
+  - Becik ketitik olo ketoro
+  - Jaman iku owah gingsir
+  - Kakehan gludhug kurang udan
+  - Koyo banyu karo lengo
+  - Kebo kabotan sungu
+  - Kebo nusu gudel
+  - Kutuk marani sunduk
+  - Manunggaling kawulo gusti
   timerText: {fileID: 2980270580376971991}
   timer: {fileID: 1144707452}
-  audioClipsPath: VO/Paribasa/
+  audioClipsPath: VO/Paribasa/Jawa
   audioSource: {fileID: 2980270579667070119}
   audioClips: []
   btns: []

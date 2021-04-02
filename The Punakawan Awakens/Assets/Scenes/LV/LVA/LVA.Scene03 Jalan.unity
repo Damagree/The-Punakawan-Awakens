@@ -945,7 +945,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.69, y: -0.65}
+  m_Offset: {x: 0.77945626, y: -0.7036718}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -956,7 +956,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.49, y: 1.71}
+  m_Size: {x: 1.881696, y: 0.66799474}
   m_EdgeRadius: 0
 --- !u!114 &398709962
 MonoBehaviour:
@@ -985,28 +985,28 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Gatau kang, mungkin kita perlu periksa dulu"'
+    sentence: '"Gatau cak, mungkin kita perlu periksa dulu"'
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 1
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Biar Saya periksa dulu kang!"'
+    sentence: '"Biar Saya periksa dulu cak!"'
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Sok Sok"'
+    sentence: '"Monggoh"'
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 1
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Ajian Hayam Ngendog"'
+    sentence: '"Ajian Pitik Ngendog"'
   sentencesAfterWin:
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
@@ -1014,7 +1014,7 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Ngga ada yang penting buat informasi kita kang"'
+    sentence: '"Ngga ada yang penting buat informasi kita cak"'
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
@@ -2669,28 +2669,28 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Gatau kang, mungkin kita perlu periksa dulu"'
+    sentence: '"Gatau cak, mungkin kita perlu periksa dulu"'
   - name: Gareng
     characterSprite: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1, type: 3}
     dir: 1
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Kalau begitu biar saya periksa kang!"'
+    sentence: '"Kalau begitu biar saya periksa cak!"'
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Sok atuh, Gareng!"'
+    sentence: '"Coba en, Gareng!"'
   - name: Gareng
     characterSprite: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1, type: 3}
     dir: 1
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Siap kaaang!"'
+    sentence: '"Siap caaak!"'
   sentencesAfterWin:
   - name: Gareng
     characterSprite: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1, type: 3}
@@ -2698,7 +2698,7 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Udah beres kang!"'
+    sentence: '"Udah beres cak!"'
   - name: Gareng
     characterSprite: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1, type: 3}
     dir: 0
@@ -3609,7 +3609,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.72, y: -0.68}
+  m_Offset: {x: 0.71999997, y: -0.65963566}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3620,7 +3620,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.96, y: 1.11}
+  m_Size: {x: 1.7970859, y: 0.71629167}
   m_EdgeRadius: 0
 --- !u!114 &1695618528
 MonoBehaviour:
@@ -3656,7 +3656,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Sini lah biar ku Saya periksa"'
+    sentence: '"Sini lah biar ku  periksa"'
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
@@ -3671,14 +3671,14 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Gimana kang?"'
+    sentence: '"Gimana cak?"'
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: '"Bukan apa-apa euy, ayo kita lanjut cari sekitar aja dulu"'
+    sentence: '"Bukan apa-apa, ayo kita lanjut cari sekitar aja dulu"'
   isChecked: 0
   afterWinEvent:
     m_PersistentCalls:

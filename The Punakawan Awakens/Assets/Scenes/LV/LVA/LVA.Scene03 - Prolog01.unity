@@ -4784,15 +4784,14 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CKumaha menurut kamu, Dawala?\u201D"
+    sentence: "\u201CYo opo menurut kamu, Dawala?\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CSaya mah jadi bingung, kang. Ini teh sebenernya makhluk apaan
-      ya?\""
+    sentence: "\u201CSaya dadi bingung, Cak. Ini sebenernya makhluk apaan ya?\""
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
@@ -4801,37 +4800,37 @@ MonoBehaviour:
     isMiddleSpriteActive: 0
     sentence: "\"Dibilang monster nggak mungkin, soalnya daging di dalam baju zirah
       ini sudah busuk. Masa ada bangkai bisa berjalan? Tapi kalau dibilang baju zirah
-      ini berjalan sendiri juga kan tidak mungkin? Ah, saya mah jadi lieur! Pusing!\u201D"
+      ini berjalan sendiri juga kan tidak mungkin? Ah, saya dadi ngelu! Pusing!\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CKalau saya yang bikin pusing teh campuran baju zirahnya, Dawala.
-      Logamnya teh keras banget. Selama ini saya mah nggak pernah kenal ada pandai
-      besi yang bisa bikin campuran besi kayak begini di Madyapada,\u201D"
+    sentence: "\u201CKalau saya yang bikin pusing campuran baju zirahnya, Dawala.
+      Logamnya keras banget. Selama ini saya nggak pernah kenal ada pandai besi yang
+      bisa bikin campuran besi kayak begini di Madyapada,\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CEmang keras banget ya, kang?\u201D"
+    sentence: "\u201CEmang keras banget ya, cak?\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CHe-eh. Sok weh cabak! Pegang nih! Keras!\u201D"
+    sentence: "\u201CHe-eh. coba cekelo! Pegang nih! Keras!\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CKeras aja atau keras banget, kang?\u201D"
+    sentence: "\u201CKeras aja atau keras banget, cak?\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
@@ -4845,14 +4844,14 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CGareng? Kadieu heula! Sini sebentar!\u201D"
+    sentence: "\u201CGareng? Mrene diluk! Sini sebentar!\u201D"
   - name: Gareng
     characterSprite: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CAya naon, kang? Ada apa?\u201D"
+    sentence: "\u201COno opo, cak? Ada apa?\u201D"
   - name: '-'
     characterSprite: {fileID: 0}
     dir: 0
@@ -4873,7 +4872,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CTuh kan, ceuk urang ge naon, Dawala! Ini logamnya keras banget.
+    sentence: "\u201CTuh kan, dikandani gak percoyo, Dawala! Ini logamnya keras banget.
       Si Gareng aja sampai kesakitan begitu,\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
@@ -4881,7 +4880,7 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CMasa sih? Cikan saya nyobaan,\u201D"
+    sentence: "\u201CMasa sih? tak coba disik,\u201D"
   - name: '-'
     characterSprite: {fileID: 0}
     dir: 0
@@ -4902,7 +4901,7 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CEh, ternyata bener, kang. Memang keras,\u201D"
+    sentence: "\u201CEh, ternyata bener, cak. Memang keras,\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
@@ -4930,7 +4929,7 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CTapi saya masih ragu-ragu, Kang,\u201D "
+    sentence: "\u201CTapi saya masih ragu-ragu, Cak,\u201D "
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
@@ -4952,16 +4951,16 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CEh, eh, udah, udah, udah!\u201D "
+    sentence: "\u201CEh, eh, wes, wes, wes!\u201D "
   - name: Gareng
     characterSprite: {fileID: 21300000, guid: 916ca702ccf78e1439cc7faf24cc2bb1, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CJangan becanda atuh, kang! Iya saya tahu kalau baju zirah monster
-      itu teh keras banget. Saya tahu! Saya setuju! Kepala dan kaki saya sudah cukup
-      jadi bahan uji coba. Cukup, kang, cukup!\u201D"
+    sentence: "\u201CJangan banyol, cak! Iya saya tahu kalau baju zirah monster itu
+      teh keras banget. Saya tahu! Saya setuju! Kepala dan kaki saya sudah cukup
+      jadi bahan uji coba. Cukup, cak, cukup!\u201D"
   - name: '-'
     characterSprite: {fileID: 0}
     dir: 0
@@ -4989,7 +4988,7 @@ MonoBehaviour:
     whereToPlace: 1
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CTapi yang aneh mah ini, kang,\u201D"
+    sentence: "\u201CTapi yang aneh ini, cak,\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
@@ -5020,7 +5019,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd, type: 3}
     isMiddleSpriteActive: 1
-    sentence: "\u201CCorporation teh kalau nggak salah artinya pabrik. Pabrik raksasa
+    sentence: "\u201CCorporation kalau nggak salah artinya pabrik. Pabrik raksasa
       yang bentuknya gede, pegawainya banyak dan suka bikin benda-benda dalam jumlah
       yang banyak juga,\u201D"
   - name: Bangbang Kaca
@@ -5036,31 +5035,30 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd, type: 3}
     isMiddleSpriteActive: 1
-    sentence: "\u201CItu teh bahasa Inggris,\u201D "
+    sentence: "\u201CItu bahasa Inggris,\u201D "
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd, type: 3}
     isMiddleSpriteActive: 1
-    sentence: "Bahasa yang suka dipake di kepulauan Britania Raya. Bahasa ini teh
-      asalnya dari dialek Anglo-Frisia. Di negeri seberang mah bahasa ini sering
-      dipake. Tapi saya ragu kalau penduduk di negeri seberang itu bisa bikin cyborg
-      sekuat ini.\u201D"
+    sentence: "Bahasa yang suka dipake di kepulauan Britania Raya. Bahasa ini asalnya
+      dari dialek Anglo-Frisia. Di negeri seberang bahasa ini sering dipake. Tapi
+      saya ragu kalau penduduk di negeri seberang itu bisa bikin cyborg sekuat ini.\u201D"
   - name: Dawala
     characterSprite: {fileID: 21300000, guid: 39af37758291ca94ab4f74e5672df2a3, type: 3}
     dir: 0
     whereToPlace: 1
     item: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd, type: 3}
     isMiddleSpriteActive: 1
-    sentence: "\u201CTerus kira-kira siapa atuh yang bikinnya, kang?\u201D"
+    sentence: "\u201CTerus kira-kira siapa yang bikinnya, cak?\u201D"
   - name: Cepot
     characterSprite: {fileID: 21300000, guid: b581bbc801de97e41ba6f982a797116a, type: 3}
     dir: 0
     whereToPlace: 0
     item: {fileID: 21300000, guid: fa1270d90644eb24b834c4e878bb5fcd, type: 3}
     isMiddleSpriteActive: 1
-    sentence: "Kayaknya mah kita juga harus selidiki daerah sekitar perbatasan, Gusti
+    sentence: "Kayaknya kita juga harus selidiki daerah sekitar perbatasan, Gusti
       Patih. Mungkin kita bisa menemukan petunjuk darimana mereka berasal.\u201D "
   typingSpeed: 0.02
   eventAfterDialogue:

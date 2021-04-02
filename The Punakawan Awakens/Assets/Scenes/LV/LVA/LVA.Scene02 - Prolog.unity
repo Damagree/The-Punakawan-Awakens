@@ -5058,14 +5058,14 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CSampurasun, abah Semar\u2026\u201D"
+    sentence: "\u201CSugeng dalu, abah Semar\u2026\u201D"
   - name: Semar
     characterSprite: {fileID: 0}
     dir: 0
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CRampes. Siapa ini?\u201D"
+    sentence: "\u201CNggeh. Siapa ini?\u201D"
   - name: Bangbang Kaca
     characterSprite: {fileID: 0}
     dir: 0
@@ -5096,7 +5096,7 @@ MonoBehaviour:
     whereToPlace: 0
     item: {fileID: 0}
     isMiddleSpriteActive: 0
-    sentence: "\u201CApa? Diserang ku saha? Diserang oleh siapa?\u201D "
+    sentence: "\u201CApa? Diserang sopo?\u201D "
   - name: '-'
     characterSprite: {fileID: 0}
     dir: 0
