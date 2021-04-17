@@ -7715,7 +7715,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[3].sentence
-      value: "\u201CJangan-jangan si abah teh nggak suka kita ngebawain cerita Ramayana
+      value: "\u201CJangan-jangan si abah nggak suka kita ngebawain cerita Ramayana
         yang diubah jadi ngaco kayak tadi\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
@@ -8040,7 +8040,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[16].sentence
-      value: "\u201CDiuk heula!\u201D "
+      value: "\u201CLenggah rumiyen!\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8178,8 +8178,8 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[22].sentence
-      value: "\u201CAya anu wani-wani nyerang Hastinapura? Kurang ajar pisan! Mana
-        jelemana, abah? Dieu kitu! Di kadek siah ku bedog aing!\u201D"
+      value: "\u201COno ae sing wani-wani nyerang Hastinapura? Kurang ajar! Ndi wong
+        e, bah? kong kon merene! ben tak koyek!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8200,7 +8200,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[23].sentence
-      value: "\u201CNtar dulu atuh, kang. Sabar. Kan ceritanya juga baru mulai,\u201D "
+      value: "\u201CNtar dulu atuh, cak. Sabar. Kan ceritanya juga baru mulai,\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8226,8 +8226,8 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[24].sentence
-      value: "\u201CMain kadek, kadek, weh. Dengerin dulu dong. Itu yang nyerang
-        monster. Bukan orang.\u201D"
+      value: "\u201CMain koyek, koyek ae. Dengerin dulu dong. Itu yang nyerang monster.
+        Bukan orang.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8248,7 +8248,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[25].sentence
-      value: "\u201CAh, teu paduli uing mah. Jelema dikadek, monster dikadek, hihihi.\u201D"
+      value: "\u201CAh, ga ngurus. wong dikoyek, monster dikoyek, hihihi.\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8297,7 +8297,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sentences.Array.data[27].sentence
       value: "\u201CBangbang Kaca juga telah mengirimkan gambaran dari kejadian-kejadian
-        penyerangan itu supaya lebih jelas. Sok ku maraneh tempo. Abah kirim telepatinya
+        penyerangan itu supaya lebih jelas. Monggo di delok rumiyen. Abah kirim telepatinya
         sekarang.\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
@@ -8426,7 +8426,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[28].sentence
-      value: "\u201CWaduh? Monster naon eta euy?\u201D"
+      value: "\u201CWaduh? Monster opo kui?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8469,8 +8469,8 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[30].sentence
-      value: "\u201CKakara ayeuna uing ningali monster jiga kitu\u201D \u201CMonster
-        ap aitu teh, abah?\u201D"
+      value: "\u201CBaru saiki aku ndelok monster koyok ngono\u201D \u201CMonster
+        apa itu, bah?\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8496,7 +8496,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[31].sentence
-      value: "\u201CPuguhan teu nyaho!\u201D "
+      value: "\u201COjo takon aku, aku yo ra ngerti\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8522,7 +8522,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[32].sentence
-      value: "\u201CKalau tahu mah si Bangbang kKaca nggak bakalan nanya atuh!\u201D"
+      value: "\u201CKalau tahu mah si Bangbang Kaca nggak bakalan nanya!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8598,7 +8598,7 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[35].sentence
-      value: "\u201CSatuju!\u201D"
+      value: "\u201CSetuju!\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
@@ -8703,8 +8703,8 @@ PrefabInstance:
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
       propertyPath: sentences.Array.data[39].sentence
-      value: "\u201CAbah mah sudah tua atuh, asam urat, kolesterol sama darah tinggi
-        abah suka kumat\u201D "
+      value: "\u201CAbah mah sudah tua, asam urat, kolesterol sama darah tinggi abah
+        suka kumat\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6912077479189432188, guid: 16c41a3da16d1f04892d9d9a9cb44303,
         type: 3}
